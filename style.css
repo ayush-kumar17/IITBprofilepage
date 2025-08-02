@@ -1,172 +1,34 @@
-/* I just reset some basics here */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; line-height: 1.6; background: #f4f4f4; color: #333; }
 
-body{
-  font-family: Arial, sans-serif;
-  background: #f6f6f6;
-  color: #333;
-  line-height: 1.6;
-}
+/* Navbar */
+.navigation-header { background: #222; color: #fff; padding: 10px 0; position: fixed; width: 100%; top: 0; }
+.nav-container { max-width: 1100px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+.nav-menu { list-style: none; display: flex; gap: 20px; }
+.nav-menu a { color: white; text-decoration: none; }
+.nav-menu a:hover { text-decoration: underline; }
 
-/* ===== Banner ===== */
-.iitb-banner {
-  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-              url('https://www.findmydrona.com/uploads/gallery/2866/iit-bombay-mumbai_1645857072.jpg');
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
-}
+/* Hero Section */
+.hero-banner { display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 120px 20px 50px; background: #fff; }
+.hero-content-wrapper { display: flex; max-width: 1100px; gap: 40px; align-items: center; }
+.hero-text-area { flex: 1; }
+.hero-text-area h1 { font-size: 2.5rem; color: #222; margin-bottom: 15px; }
+.hero-text-area .intro-text { margin-bottom: 10px; }
+.hero-image-area { flex: 1; display: flex; justify-content: center; }
+.profile-picture { width: 300px; height: 300px; border-radius: 50%; object-fit: cover; border: 4px solid #ddd; }
 
-.banner-content {
-  max-width: 700px;
-  padding: 15px;
-}
+/* About Section */
+.about-me-section { padding: 80px 20px; background: #fafafa; }
+.section-title { font-size: 2rem; margin-bottom: 20px; text-align: center; }
+.about-list { max-width: 800px; margin: auto; list-style: disc; padding-left: 20px; }
+.about-list li { margin-bottom: 10px; }
 
-.photo-frame {
-  width: 180px; height: 180px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin: 0 auto 25px;
-  border: 5px solid #fff;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-}
-
-.photo-frame img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.banner-content h1 {
-  font-size: 2.8em;
-  margin-bottom: 8px;
-}
-
-.subtitle {
-  color: #fdd835;
-  font-size: 1.2em;
-}
-
-/* ===== About Me ===== */
-.bio-area{
-  max-width: 950px;
-  margin: 70px auto;
-  padding: 0 15px;
-  text-align: center;
-}
-
-.bio-area h2{
-  font-size: 2.3em;
-  color: #2c3e50;
-  margin-bottom: 25px;
-}
-
-.bio-text{
-  color: #555;
-  text-align: justify;
-}
-
-.bio-text p{
-  margin-bottom: 18px;
-  font-size: 1.05em;
-}
-
-.highlight{
-  background: linear-gradient(120deg,#a8edea 0%,#fed6e3 100%);
-  padding: 2px 6px;
-  border-radius: 3px;
-}
-
-/* ===== Contact Section ===== */
-.reach-out{
-  background: #2c3e50;
-  color: #fff;
-  padding: 55px 15px;
-  text-align: center;
-}
-
-.reach-out h2{
-  font-size: 2.3em;
-  margin-bottom: 35px;
-}
-
-.contact-cards{
-  max-width: 750px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-  gap: 25px;
-}
-
-.contact-box{
-  background: rgba(255,255,255,0.1);
-  padding: 18px;
-  border-radius: 8px;
-  transition: 0.3s;
-}
-.contact-box:hover{ transform: translateY(-4px); }
-
-.contact-box h3{ 
-  color: #ffd700; 
-  margin-bottom: 12px;
-}
-
-/* ===== Social Buttons ===== */
-.social-area{
-  margin-top: 35px;
-}
-
-.social-buttons{
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.social-btn{
-  display: inline-block;
-  padding: 10px 18px;
-  border-radius: 25px;
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-.social-btn:hover{
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-}
-
-.social-btn.email{ background:#e74c3c; }
-.social-btn.linkedin{ background:#0077b5; }
-.social-btn.instagram{
-  background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
-}
+/* Contact Section */
+.contact-section { padding: 80px 20px; background: #fff; text-align: center; }
+.contact-container { max-width: 600px; margin: auto; }
+.social-links a { margin: 0 10px; text-decoration: none; color: #0066cc; }
+.social-links a:hover { text-decoration: underline; }
 
 /* Footer */
-footer{
-  background: #1a252f;
-  color: #aaa;
-  text-align: center;
-  padding: 18px;
-  font-size: 0.9em;
-}
-
-/* Mobile tweaks */
-@media (max-width: 768px){
-  .banner-content h1{ font-size: 2.2em; }
-  .photo-frame{ width:150px; height:150px; }
-  .bio-area h2{ font-size: 2em; }
-}
+.site-footer { background: #222; color: white; text-align: center; padding: 20px; margin-top: 30px; }
