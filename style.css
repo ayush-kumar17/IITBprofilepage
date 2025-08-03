@@ -11,7 +11,7 @@
     color: #333; 
     }
 
-.navigation-header { 
+.navigation{ 
     background: #222; 
     color: #fff; 
     padding: 10px 0;
@@ -74,7 +74,7 @@
 
 .hero-image-area 
 { 
-    flex: 1; 
+    flex: 0; 
     display: flex; 
     justify-content: center; 
 }
